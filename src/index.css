@@ -1,0 +1,9 @@
+/*
+  Make sure your build process uses Tailwind CSS to process these directives.
+  If you see "Unknown at rule @tailwind", your CSS is not being processed by Tailwind.
+  See https://tailwindcss.com/docs/installation for setup instructions.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
