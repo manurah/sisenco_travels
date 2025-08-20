@@ -73,7 +73,7 @@ const FeaturedPackages = () => {
           {packages.map((pkg) => (
             <div 
               key={pkg.id} 
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              className="bg-blue-200 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <div className="relative">
                 <img 
@@ -122,7 +122,7 @@ const FeaturedPackages = () => {
                 <div className="flex items-center justify-center mt-auto">
                   <button
                     onClick={() => sendWhatsAppMessage(pkg.id)}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
+                    className="bg-blue-900 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-colors duration-200"
                   >
                     For more details
                   </button>
@@ -139,7 +139,7 @@ const FeaturedPackages = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
               navigate("/packages");
             }}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
             View All Packages
           </button>

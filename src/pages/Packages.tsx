@@ -221,7 +221,7 @@ const Packages = () => {
                       <span className="text-sm font-semibold">{pkg.rating}</span>
                     </div>
                   </div>
-                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-yellow-500 text-white  px-3 py-1 rounded-full text-sm font-medium">
                     {pkg.category}
                   </div>
                 </div>
@@ -256,7 +256,7 @@ const Packages = () => {
                   <div className="mt-auto flex justify-center">
                     <button
                       onClick={() => handleWhatsAppMessage(pkg.title)}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
+                      className="bg-blue-900 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
                     >
                       For more details
                     </button>
@@ -269,7 +269,7 @@ const Packages = () => {
       </div>
 
       {/* CTA Section (full width) */}
-      <div className="w-full py-16 bg-blue-600 text-white">
+      <div className="w-full py-16 bg-blue-900 text-white">
         <div className="w-full px-4 sm:px-6 lg:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Can't Find What You're Looking For?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
@@ -283,7 +283,7 @@ const Packages = () => {
                 "_blank"
               )
             }
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
             Request Custom Package
           </button>

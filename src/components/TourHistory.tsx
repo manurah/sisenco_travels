@@ -71,7 +71,7 @@ const TourHistory = () => {
               </div>
 
               {/* Content */}
-              <div className="md:w-2/3 p-6 flex flex-col justify-between h-full">
+              <div className="bg-blue-200 md:w-2/3 p-6 flex flex-col justify-between h-full">
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center text-sm text-gray-500">

@@ -53,12 +53,12 @@ const WhyChooseUs = () => {
         {/* Feature cards */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+            <div key={index} className="bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
               <div className="flex items-center mb-4">
                 <div className="bg-blue-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                  <feature.icon className="h-6 w-6 text-blue-600" />
+                  <feature.icon className="h-6 w-6 text-blue-700" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-600">{feature.title}</h3>
               </div>
               <p className="text-gray-600 leading-relaxed flex-grow">{feature.description}</p>
             </div>
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 w-full bg-blue-600 rounded-2xl p-8 text-white text-center">
+        <div className="mt-12 w-full bg-blue-900 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Who Are we?</h3>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
             Want to know more about our story, vision, and the experiences we create for travelers? Discover more about us below.
@@ -75,9 +75,9 @@ const WhyChooseUs = () => {
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
               navigate("/about")}}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
-            Get Started Today
+            Let's Know More
           </button>
         </div>
       </div>

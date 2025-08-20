@@ -55,7 +55,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-blue-100 p-4 rounded-full">
+                  <div className="bg-blue-200 p-4 rounded-full">
                     <stat.icon className="h-8 w-8 text-blue-600" />
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const About = () => {
             {values.map((value, index) => (
               <div key={index} className="text-center p-6">
                 <div className="flex justify-center mb-4">
-                  <div className="bg-blue-100 p-4 rounded-full">
+                  <div className="bg-blue-200 p-4 rounded-full">
                     <value.icon className="h-8 w-8 text-blue-600" />
                   </div>
                 </div>
@@ -141,44 +141,44 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-blue-200 rounded-xl shadow-md min-h-[400px] flex flex-col justify-center items-center text-center p-6">
               <img 
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300" 
                 alt="Team member"
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                className="w-28 h-28 rounded-full mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Saman Perera</h3>
-              <p className="text-blue-600 mb-3">Founder & CEO</p>
-              <p className="text-gray-600 text-sm">
+              <p className="text-blue-700 mb-3">Founder & CEO</p>
+              <p className="text-gray-700 text-sm">
                 With 15 years in the travel industry, Saman leads our team with passion 
                 and expertise in creating unforgettable experiences.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <div className="bg-blue-200 rounded-xl shadow-md min-h-[400px] flex flex-col justify-center items-center text-center p-6">
               <img 
                 src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300" 
                 alt="Team member"
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                className="w-28 h-28 rounded-full mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Nisha Fernando</h3>
-              <p className="text-blue-600 mb-3">Operations Manager</p>
-              <p className="text-gray-600 text-sm">
+              <p className="text-blue-700 mb-3">Operations Manager</p>
+              <p className="text-gray-700 text-sm">
                 Nisha ensures every detail of your trip is perfectly coordinated, 
                 bringing 10 years of operational excellence to our team.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
+            <div className="bg-blue-200 rounded-xl shadow-md min-h-[400px] flex flex-col justify-center items-center text-center p-6">
               <img 
                 src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300" 
                 alt="Team member"
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                className="w-28 h-28 rounded-full mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Kasun Silva</h3>
-              <p className="text-blue-600 mb-3">Senior Tour Guide</p>
-              <p className="text-gray-600 text-sm">
+              <p className="text-blue-700 mb-3">Senior Tour Guide</p>
+              <p className="text-gray-700 text-sm">
                 Kasun's deep knowledge of Sri Lankan culture and history brings 
                 destinations to life with engaging stories and insights.
               </p>
@@ -188,7 +188,7 @@ const About = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="py-16 bg-blue-600 text-white w-full">
+      <div className="py-16 bg-blue-900 text-white w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Experience the Difference?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
@@ -197,7 +197,7 @@ const About = () => {
           </p>
           <button
             onClick={() => window.open("https://wa.me/+94778403773?text=Hello%20Sisenco%20Travels!%20I%20want%20to%20request%20a%20custom%20package.", "_blank")}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
             Start Planning Your Trip
           </button>

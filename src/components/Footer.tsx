@@ -87,7 +87,7 @@ const Footer = () => {
               <img
                 src="/Logo.crop.png"
                 alt="Sisenco Travels Logo"
-                style={{ height: '60px', width: 'auto' }}
+                style={{ height: '80px', width: 'auto' }}
               />
             </Link>
           </div>

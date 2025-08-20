@@ -88,7 +88,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-20"></div>
@@ -233,7 +233,7 @@ const Contact = () => {
 
                     <button
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
+                      className="w-full bg-blue-900 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center"
                     >
                       <Send className="h-5 w-5 mr-2" />
                       Send Message
@@ -245,7 +245,7 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="bg-blue-100 rounded-xl shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -276,7 +276,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6">
+              <div className="bg-blue-100 rounded-xl shadow-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">Business Hours</h3>
                 <div className="space-y-3">
                   <div className="flex items-center">
@@ -284,7 +284,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-gray-900">Monday - Friday</p>
                       <p className="text-gray-600">9:00 AM - 6:00 PM</p>
-                    </div>
+                    </div> 
                   </div>
                   <div className="flex items-center">
                     <Clock className="h-5 w-5 text-blue-600 mr-3" />
@@ -303,7 +303,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+              <div className="bg-red-100 border border-red-500 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-red-800 mb-4">24/7 Emergency Support</h3>
                 <p className="text-red-700 mb-3">
                   For urgent matters during your trip, our emergency hotline is available 24/7:

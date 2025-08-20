@@ -53,31 +53,37 @@ const Testimonials = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-blue-100 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-center mb-4">
-                <img 
-                  src={testimonial.image} 
+            <div
+              key={testimonial.id}
+              className="bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 min-h-[400px] flex flex-col justify-center items-center text-center"
+            >
+              {/* Image, Name & Location */}
+              <div className="flex flex-col items-center mb-3">
+                <img
+                  src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
+                  className="w-16 h-16 rounded-full object-cover mb-2"
                 />
-                <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
-                </div>
-                <div className="ml-auto">
-                  <Quote className="h-8 w-8 text-blue-200" />
-                </div>
+                <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                <p className="text-sm text-gray-500 -mt-1">{testimonial.location}</p>
               </div>
-              
-              <div className="flex items-center mb-3">
+
+              {/* Ratings */}
+              <div className="flex items-center mb-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                 ))}
               </div>
-              
-              <p className="text-gray-600 leading-relaxed italic">
+
+              {/* Testimonial Text */}
+              <p className="text-gray-600 leading-relaxed italic mt-2">
                 "{testimonial.text}"
               </p>
+
+              {/* Quote Icon */}
+              <div className="mt-4">
+                <Quote className="h-6 w-6 text-blue-500" />
+              </div>
             </div>
           ))}
         </div>
@@ -85,14 +91,14 @@ const Testimonials = () => {
 
       {/* CTA Section */}
       <div className="mt-12 text-center w-full px-4 sm:px-6 lg:px-8">
-        <div className="bg-blue-600 rounded-2xl p-8 text-white">
+        <div className="bg-blue-900 rounded-2xl p-8 text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Create Your Own Story?</h3>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
             Join hundreds of satisfied travelers who have trusted us with their dream vacations.
           </p>
           <button 
           onClick={() => window.open("https://wa.me/+94778403773?text=Hello%20Sisenco%20Travels!%20I%20want%20to%20request%20a%20custom%20package.", "_blank")}
-          className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+          className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
             Start Planning Your Trip
           </button>
         </div>

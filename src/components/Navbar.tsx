@@ -8,10 +8,11 @@ const Navbar = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
     { name: 'Packages', href: '/packages' },
     { name: 'Gallery', href: '/gallery' },
+    { name: 'About Us', href: '/about' },
     { name: 'Contact Us', href: '/contact' },
+    
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -25,7 +26,7 @@ const Navbar = () => {
               <img 
                 src="/Logo.crop.png"  
                 alt="Sisenco Travels Logo" 
-                style={{ height: '60px', width: 'auto' }}
+                style={{ height: '80px', width: 'auto' }}
               />
             </Link>
           </div>
