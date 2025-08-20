@@ -187,8 +187,8 @@ const Gallery = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                   selectedCategory === category
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    ? 'bg-blue-900 text-white'
+                    : 'bg-blue-400 text-white hover:bg-gray-300'
                 }`}
               >
                 {category}
@@ -216,14 +216,14 @@ const Gallery = () => {
                       alt={image.title}
                       className="w-full h-full object-cover rounded-lg shadow-lg"
                     />
-                    <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="absolute top-4 right-4 bg-blue-900 text-white px-3 py-1 rounded-full text-sm font-medium">
                       {image.category}
                     </div>
                   </div>
                   
                   {/* Back Side - Description */}
-                  <div className="flip-card-back bg-blue-600 text-white p-6 rounded-lg shadow-lg flex flex-col justify-center">
-                    <h3 className="text-xl font-bold mb-3 text-center">{image.title}</h3>
+                  <div className="flip-card-back bg-blue-900 text-white p-6 rounded-lg shadow-lg flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-3 text-center text-yellow-400">{image.title}</h3>
                     <p className="text-white mb-4 text-center leading-relaxed">{image.description}</p>
                     
                     <div className="space-y-2 text-sm">
@@ -249,7 +249,7 @@ const Gallery = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="py-16 bg-blue-600 text-white w-full">
+      <div className="py-16 bg-blue-900 text-white w-full">
         <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Want to Be Part of Our Next Gallery?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">
@@ -258,7 +258,7 @@ const Gallery = () => {
           </p>
           <button 
           onClick={() => window.open("https://wa.me/+94778403773?text=Hello%20Sisenco%20Travels!%20I%20want%20to%20request%20a%20custom%20package.", "_blank")}
-          className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+          className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
             Book Your Adventure
           </button>
         </div>
